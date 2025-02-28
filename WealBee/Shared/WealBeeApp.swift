@@ -1,8 +1,8 @@
 import Foundation
 import AsyncHTTPClient
 
-// OpenAI API キー
-let openAIAPIKey = "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"
+// OpenAI API キーを入力してください
+let openAIAPIKey = ""
 
 // AIによる健康アドバイスを生成
 func getHealthAdvice(message: String) async throws -> String {
