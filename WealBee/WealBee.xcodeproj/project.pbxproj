@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A200B9BF2D256E3000053609 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200B9BE2D256E3000053609 /* Tests_iOS.swift */; };
+		A200B9C12D256E3000053609 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200B9C02D256E3000053609 /* Tests_iOSLaunchTests.swift */; };
+		A200B9CB2D256E3000053609 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200B9CA2D256E3000053609 /* Tests_macOS.swift */; };
+		A200B9CD2D256E3000053609 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200B9CC2D256E3000053609 /* Tests_macOSLaunchTests.swift */; };
+		A200B9CE2D256E3000053609 /* WealBeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200B9A62D256E2A00053609 /* WealBeeApp.swift */; };
+		A200B9CF2D256E3000053609 /* WealBeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200B9A62D256E2A00053609 /* WealBeeApp.swift */; };
+		A200B9D02D256E3000053609 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200B9A72D256E2A00053609 /* ContentView.swift */; };
+		A200B9D12D256E3000053609 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200B9A72D256E2A00053609 /* ContentView.swift */; };
+		A200B9D22D256E3000053609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A200B9A82D256E2F00053609 /* Assets.xcassets */; };
+		A200B9D32D256E3000053609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A200B9A82D256E2F00053609 /* Assets.xcassets */; };
+		A200B9E32D2587BE00053609 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200B9E22D2587BE00053609 /* HealthKitManager.swift */; };
+		A200B9E42D2587BE00053609 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200B9E22D2587BE00053609 /* HealthKitManager.swift */; };
+		A24892AA2D29824A00E48AF2 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24892A92D29824A00E48AF2 /* Package.swift */; };
+		A24892AB2D29824A00E48AF2 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24892A92D29824A00E48AF2 /* Package.swift */; };
+		A2620B862D2695DA00475B8F /* HealthKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2620B852D2695DA00475B8F /* HealthKitUI.framework */; };
+		A2620B872D26995D00475B8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A200B9E62D25B2E000053609 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A200B9BB2D256E3000053609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A200B9A12D256E2900053609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A200B9AC2D256E2F00053609;
+			remoteInfo = "WealBee (iOS)";
+		};
+		A200B9C72D256E3000053609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A200B9A12D256E2900053609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A200B9B22D256E3000053609;
+			remoteInfo = "WealBee (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A200B9A62D256E2A00053609 /* WealBeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WealBeeApp.swift; sourceTree = "<group>"; };
+		A200B9A72D256E2A00053609 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A200B9A82D256E2F00053609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A200B9AD2D256E3000053609 /* WealBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WealBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A200B9B32D256E3000053609 /* WealBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WealBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A200B9B52D256E3000053609 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A200B9BA2D256E3000053609 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A200B9BE2D256E3000053609 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		A200B9C02D256E3000053609 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		A200B9C62D256E3000053609 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A200B9CA2D256E3000053609 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		A200B9CC2D256E3000053609 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		A200B9E22D2587BE00053609 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitManager.swift; path = ../../../../Downloads/HealthKitManager.swift; sourceTree = "<group>"; };
+		A200B9E62D25B2E000053609 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		A24892A92D29824A00E48AF2 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		A2620B852D2695DA00475B8F /* HealthKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKitUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/HealthKitUI.framework; sourceTree = DEVELOPER_DIR; };
+		A2D4E8D82D294A110091F858 /* WealBee (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WealBee (iOS).entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A200B9AA2D256E2F00053609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2620B862D2695DA00475B8F /* HealthKitUI.framework in Frameworks */,
+				A2620B872D26995D00475B8F /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200B9B02D256E3000053609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200B9B72D256E3000053609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200B9C32D256E3000053609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A200B9A02D256E2900053609 = {
+			isa = PBXGroup;
+			children = (
+				A2D4E8D82D294A110091F858 /* WealBee (iOS).entitlements */,
+				A200B9A52D256E2A00053609 /* Shared */,
+				A200B9B42D256E3000053609 /* macOS */,
+				A200B9BD2D256E3000053609 /* Tests iOS */,
+				A200B9C92D256E3000053609 /* Tests macOS */,
+				A200B9AE2D256E3000053609 /* Products */,
+				A200B9E52D25B2E000053609 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A200B9A52D256E2A00053609 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A200B9E22D2587BE00053609 /* HealthKitManager.swift */,
+				A200B9A62D256E2A00053609 /* WealBeeApp.swift */,
+				A200B9A72D256E2A00053609 /* ContentView.swift */,
+				A200B9A82D256E2F00053609 /* Assets.xcassets */,
+				A24892A92D29824A00E48AF2 /* Package.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A200B9AE2D256E3000053609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A200B9AD2D256E3000053609 /* WealBee.app */,
+				A200B9B32D256E3000053609 /* WealBee.app */,
+				A200B9BA2D256E3000053609 /* Tests iOS.xctest */,
+				A200B9C62D256E3000053609 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A200B9B42D256E3000053609 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A200B9B52D256E3000053609 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		A200B9BD2D256E3000053609 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A200B9BE2D256E3000053609 /* Tests_iOS.swift */,
+				A200B9C02D256E3000053609 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		A200B9C92D256E3000053609 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A200B9CA2D256E3000053609 /* Tests_macOS.swift */,
+				A200B9CC2D256E3000053609 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		A200B9E52D25B2E000053609 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2620B852D2695DA00475B8F /* HealthKitUI.framework */,
+				A200B9E62D25B2E000053609 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A200B9AC2D256E2F00053609 /* WealBee (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A200B9D62D256E3000053609 /* Build configuration list for PBXNativeTarget "WealBee (iOS)" */;
+			buildPhases = (
+				A200B9A92D256E2F00053609 /* Sources */,
+				A200B9AA2D256E2F00053609 /* Frameworks */,
+				A200B9AB2D256E2F00053609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WealBee (iOS)";
+			productName = "WealBee (iOS)";
+			productReference = A200B9AD2D256E3000053609 /* WealBee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A200B9B22D256E3000053609 /* WealBee (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A200B9D92D256E3000053609 /* Build configuration list for PBXNativeTarget "WealBee (macOS)" */;
+			buildPhases = (
+				A200B9AF2D256E3000053609 /* Sources */,
+				A200B9B02D256E3000053609 /* Frameworks */,
+				A200B9B12D256E3000053609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WealBee (macOS)";
+			productName = "WealBee (macOS)";
+			productReference = A200B9B32D256E3000053609 /* WealBee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A200B9B92D256E3000053609 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A200B9DC2D256E3000053609 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				A200B9B62D256E3000053609 /* Sources */,
+				A200B9B72D256E3000053609 /* Frameworks */,
+				A200B9B82D256E3000053609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A200B9BC2D256E3000053609 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = A200B9BA2D256E3000053609 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A200B9C52D256E3000053609 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A200B9DF2D256E3000053609 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				A200B9C22D256E3000053609 /* Sources */,
+				A200B9C32D256E3000053609 /* Frameworks */,
+				A200B9C42D256E3000053609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A200B9C82D256E3000053609 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = A200B9C62D256E3000053609 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A200B9A12D256E2900053609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A200B9AC2D256E2F00053609 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					A200B9B22D256E3000053609 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					A200B9B92D256E3000053609 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = A200B9AC2D256E2F00053609;
+					};
+					A200B9C52D256E3000053609 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = A200B9B22D256E3000053609;
+					};
+				};
+			};
+			buildConfigurationList = A200B9A42D256E2900053609 /* Build configuration list for PBXProject "WealBee" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A200B9A02D256E2900053609;
+			productRefGroup = A200B9AE2D256E3000053609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A200B9AC2D256E2F00053609 /* WealBee (iOS) */,
+				A200B9B22D256E3000053609 /* WealBee (macOS) */,
+				A200B9B92D256E3000053609 /* Tests iOS */,
+				A200B9C52D256E3000053609 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A200B9AB2D256E2F00053609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A200B9D22D256E3000053609 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200B9B12D256E3000053609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A200B9D32D256E3000053609 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200B9B82D256E3000053609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200B9C42D256E3000053609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A200B9A92D256E2F00053609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24892AA2D29824A00E48AF2 /* Package.swift in Sources */,
+				A200B9D02D256E3000053609 /* ContentView.swift in Sources */,
+				A200B9CE2D256E3000053609 /* WealBeeApp.swift in Sources */,
+				A200B9E32D2587BE00053609 /* HealthKitManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200B9AF2D256E3000053609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24892AB2D29824A00E48AF2 /* Package.swift in Sources */,
+				A200B9D12D256E3000053609 /* ContentView.swift in Sources */,
+				A200B9CF2D256E3000053609 /* WealBeeApp.swift in Sources */,
+				A200B9E42D2587BE00053609 /* HealthKitManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200B9B62D256E3000053609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A200B9C12D256E3000053609 /* Tests_iOSLaunchTests.swift in Sources */,
+				A200B9BF2D256E3000053609 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200B9C22D256E3000053609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A200B9CD2D256E3000053609 /* Tests_macOSLaunchTests.swift in Sources */,
+				A200B9CB2D256E3000053609 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A200B9BC2D256E3000053609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A200B9AC2D256E2F00053609 /* WealBee (iOS) */;
+			targetProxy = A200B9BB2D256E3000053609 /* PBXContainerItemProxy */;
+		};
+		A200B9C82D256E3000053609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A200B9B22D256E3000053609 /* WealBee (macOS) */;
+			targetProxy = A200B9C72D256E3000053609 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A200B9D42D256E3000053609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A200B9D52D256E3000053609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A200B9D72D256E3000053609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = "WealBee (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2UB66ML8Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "健康データを共有するために必要です";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "アプリの健康データを取得するために必要です";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WealBee.WealBee;
+				PRODUCT_NAME = WealBee;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A200B9D82D256E3000053609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = "WealBee (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2UB66ML8Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "健康データを共有するために必要です";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "アプリの健康データを取得するために必要です";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WealBee.WealBee;
+				PRODUCT_NAME = WealBee;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A200B9DA2D256E3000053609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WealBee.WealBee;
+				PRODUCT_NAME = WealBee;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A200B9DB2D256E3000053609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WealBee.WealBee;
+				PRODUCT_NAME = WealBee;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A200B9DD2D256E3000053609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "WealBee.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WealBee (iOS)";
+			};
+			name = Debug;
+		};
+		A200B9DE2D256E3000053609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "WealBee.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WealBee (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A200B9E02D256E3000053609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "WealBee.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "WealBee (macOS)";
+			};
+			name = Debug;
+		};
+		A200B9E12D256E3000053609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "WealBee.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "WealBee (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A200B9A42D256E2900053609 /* Build configuration list for PBXProject "WealBee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A200B9D42D256E3000053609 /* Debug */,
+				A200B9D52D256E3000053609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A200B9D62D256E3000053609 /* Build configuration list for PBXNativeTarget "WealBee (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A200B9D72D256E3000053609 /* Debug */,
+				A200B9D82D256E3000053609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A200B9D92D256E3000053609 /* Build configuration list for PBXNativeTarget "WealBee (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A200B9DA2D256E3000053609 /* Debug */,
+				A200B9DB2D256E3000053609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A200B9DC2D256E3000053609 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A200B9DD2D256E3000053609 /* Debug */,
+				A200B9DE2D256E3000053609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A200B9DF2D256E3000053609 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A200B9E02D256E3000053609 /* Debug */,
+				A200B9E12D256E3000053609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A200B9A12D256E2900053609 /* Project object */;
+}
